@@ -26,8 +26,7 @@ export const Sale_RankingApi = (params, selectvalue) => async(dispatch)=>{
           
         let {data} =await axios.get(`${Base_Url}/SaleListing?period=${selectvalue}&slug=${params.collectionName}`)
 
-           let {result} = data
-           console.log("result", result);
+           let {result} = data;
 dispatch({
     type: SALE_RANKING,
     payload: {

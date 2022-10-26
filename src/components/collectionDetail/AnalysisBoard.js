@@ -25,6 +25,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetch_retrive_collection } from "../redux/Action/Action";
 import { loadWeb3 } from "../api/api";
 import { toast } from 'react-toastify';
+import moment from "moment";
+// import 'moment-timezone';
 const API_KEY = process.env.REACT_APP_API_KEY || "";
 const Base_Url = process.env.REACT_APP_BASE_URL;
 
@@ -462,8 +464,12 @@ function AnalysisBoard() {
                                 <div className="scrollView">
                                     {isload ?
                                         listingData?.map((items, index) => {
+                                            // let localTime = moment.utc(items.timestamp).tz('America/New_York').format("HH:mm");
+                                                console.log("localTime", items.timestamp);
                                             let finalTimeToDisplay = "";
-                                            let currentTime = new Date().getTime();
+                                            let currTimestamp = Date.now(), //1482905176396
+                                            utcDateString = (new Date(currTimestamp)).toUTCString();
+                                            let currentTime = new Date(utcDateString).getTime();
                                             let timePassed = parseInt(currentTime) - parseInt(items.timestamp)
                                             let secondsFromTimeStamp = Math.floor(timePassed / 1000)
                                             let MinsFromTimeStamp = Math.floor(secondsFromTimeStamp / 60)
@@ -560,7 +566,9 @@ function AnalysisBoard() {
                                     isload ?
                                         tradesDataArray?.map((items, index) => {
                                             let finalTimeToDisplay = "";
-                                            let currentTime = new Date().getTime();
+                                            let currTimestamp = Date.now(), //1482905176396
+                                            utcDateString = (new Date(currTimestamp)).toUTCString();
+                                            let currentTime = new Date(utcDateString).getTime();
                                             let timePassed = parseInt(currentTime) - parseInt(items.timestamp)
                                             let secondsFromTimeStamp = Math.floor(timePassed / 1000)
                                             let MinsFromTimeStamp = Math.floor(secondsFromTimeStamp / 60)
