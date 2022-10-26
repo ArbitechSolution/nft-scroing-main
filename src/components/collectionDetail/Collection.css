@@ -252,7 +252,7 @@ tr:nth-child(even) {
 height: 95vh !important;
 box-sizing: border-box;
 
-overflow-y: hidden !important;
+overflow-y: auto !important;
   }
   .scrollViewss{
     height: 98vh;
