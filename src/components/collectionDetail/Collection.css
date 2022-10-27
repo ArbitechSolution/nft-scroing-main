@@ -16,8 +16,8 @@ tr:nth-child(even) {
     color: #fff;
 }
 .AnalysisBoardImage{
-    width: 80%;
-    height: 180px;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 .text-4xl {
     font-size: 2.25rem;
@@ -395,7 +395,8 @@ overflow-y: auto;
   font-family: Rubik,sans-serif;
 }
 .floorpriceheight{
-  height: 47vh !important;
+  height: 42vh !important;
+  /* border: 2px solid red */
 }
 .icon-color{
   --tw-text-opacity: 1;
@@ -456,7 +457,7 @@ overflow-y: auto;
   margin-bottom: 1.5rem;
 }
 .floor-height{
-  height: 50vh;
+  height: 45vh;
 }
 @media (min-width: 1280px){
 .style_layout__zzmHX {
@@ -489,22 +490,34 @@ overflow-y: auto;
         overflow-y: auto;
   
       } */
-      .dispaly-items{
+      /* .dispaly-items{
         display: flex;
         flex-direction: column;
         align-content: center !important;
         justify-content: space-between;
         height: 100vh !important;
-      }
+      } */
       .box-width{
         width: 370px !important;
         /* border: 2px solid red */
       }
       .floor-height{
-        height: 50vh !important;
+        height: 43vh !important;
       }
       .floorpriceheight{
-        height: 48vh !important;
+        height: 41vh !important;
+  /* border: 2px solid red */
+
+      }
+      .scatterplot-height{
+        margin-top: 20px !important;
+        /* border: 2px solid red; */
+      height: 52vh;
+      }
+      .grapheight{
+        height: 44vh !important;
+      
+      
       }
 }
 @media (min-width: 2250px) and (max-width: 7000px){
@@ -515,26 +528,37 @@ overflow-y: auto;
    
   }
   .floorpriceheight{
-    height: 48vh !important;
+    height: 35vh !important;
+  /* border: 2px solid red */
+
   }
   .box-width{
     width: 450px !important;
    
   }
   .floor-height{
-    height: 50vh !important;
+    height: 40vh !important;
   }
   .box-width-chart{
     width: 98%;
    
   }
-  .dispaly-items{
+  .scatterplot-height{
+    margin-top: 20px !important;
+    /* border: 2px solid red; */
+  height: 56vh;
+  }
+  .grapheight{
+    height: 50vh !important;
+    /* border: 2px solid red; */
+  }
+  /* .dispaly-items{
     display: flex;
     flex-direction: column;
     align-content: center !important;
     justify-content: space-between;
     height: 100vh !important;
-  }
+  } */
   /* .scrollView{
     max-height: 98%;
     overflow-y: auto;
@@ -549,20 +573,25 @@ overflow-y: auto;
         width: 440px;
         font-family: Rubik,sans-serif;
     }
-    .grapheight{
-      height: 70% !important;
- 
-
-    }
+   
 }
 @media(min-width: 1400px) and (max-width: 1900px){
-  .dispaly-items{
+  .scatterplot-height{
+    margin-top: 20px !important;
+    /* border: 2px solid red; */
+  height: 50vh;
+  }
+  .grapheight{
+    height: 45vh !important;
+    /* border: 2px solid red; */
+  }
+  /* .dispaly-items{
     display: flex;
     flex-direction: column;
     align-content: center !important;
     justify-content: space-between;
     height: 100vh !important;
-  }
+  } */
   
 }
 @media(max-width: 1390px){
@@ -572,13 +601,15 @@ overflow-y: auto;
  
   }
   .floorpriceheight{
-    height: 240px !important;
+    height: 228px !important;
+  /* border: 2px solid red */
+
   }
   /* .floor-height{
     height: 50vh !important;
   } */
   .floor-height{
-    height: 42vh;
+    height: 38vh;
   }
   .box-width{
     width: 220px;
@@ -588,13 +619,27 @@ overflow-y: auto;
     width: 87%;
    
   }
-  .dispaly-items{
+  /* .dispaly-items{
     display: flex;
     flex-direction: column;
     align-content: center !important;
     justify-content: space-between;
     height: 100vh !important;
+  } */
+
+  .scatterplot-height{
+    /* border: 2px solid red; */
+  height: 60vh;
   }
+  .grapheight{
+    height: 52vh !important;
+  
+  
+  }
+
+
+
+
   /* .scrollView{
     max-height: 97%;
     overflow-y: auto;
@@ -608,10 +653,10 @@ overflow-y: auto;
 }
 @media(max-width: 1280px) {
   .floor-height{
-    height: 53vh;
+    height: 40vh;
   }
   .floorpriceheight{
-    height: 52vh !important;
+    height: 38vh !important;
     /* width: 30vw !important ; */
     /* border: 2px solid red !important */
     /* height: 300px !important; */
@@ -624,13 +669,13 @@ overflow-y: auto;
   
   }
   .floorpriceheight{
-    height: 55vh !important;
+    height: 35vh !important;
     /* width: 30vw !important ; */
 
     /* height: 300px !important; */
   }
   .floor-height{
-    height: 58vh;
+    height: 38vh;
   }
   .box-width{
     width: 200px !important;
@@ -650,8 +695,13 @@ overflow-y: auto;
   max-height: 99vh !important;
     overflow-y: auto;
 } */
+.scatterplot-height{
+  /* border: 2px solid red; */
+  margin-top: 20px !important;
+height: 60vh;
+}
 .grapheight{
-  height: 80% !important;
+  height: 52vh !important;
 
 
 }

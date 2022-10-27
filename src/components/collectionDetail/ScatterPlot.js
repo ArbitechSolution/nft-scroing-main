@@ -101,7 +101,7 @@ function MyScatterPlot() {
     }, [])
 
     return (
-        <div className='mt-1' style={{ backgroundColor: '#14142B', borderRadius: '10px', height: '' }}>
+        <div className='mt-1 scatterplot-height' style={{ backgroundColor: '#14142B', borderRadius: '10px', height: '' }}>
             <div className='d-flex justify-content-between pt-3'>
                 <div className="text-white text-xl font-bold text-center ps-2 mb-2">Sales/Ranking</div>
 

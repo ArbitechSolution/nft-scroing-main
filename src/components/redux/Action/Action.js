@@ -203,6 +203,7 @@ export const fetch_retrive_collection = (params) => async (dispatch)=>{
         {
             headers: { "X-API-KEY": API_KEY },
           })
+          console.log("res1", res);
           let avgPricesArray = []
           let avgVol=[]
           let avgSales=[]

@@ -214,7 +214,7 @@ function AnalysisBoard() {
                             <div className="col-lg-7 d-flex  justify-content-center" >
                                 <div className='row d-flex justify-content-center' >
                                     <div className='col-lg-3 col-11 justify-content-center ' >
-                                        <img src={retriveCollections?.banner_image_url} alt="banner" className="AnalysisBoardImage img-fluid rounded" />
+                                        <img src={retriveCollections?.image_url} alt="banner" className="AnalysisBoardImage img-fluid rounded" />
                                     </div>
                                     <div className=' col-lg-9 ps-3' >
                                         <div className="text-4xl font-bold" >{retriveCollections?.name}</div>

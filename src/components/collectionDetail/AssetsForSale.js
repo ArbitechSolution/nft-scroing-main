@@ -82,7 +82,7 @@ function AssetsForSale() {
                     </AreaChart>
                 </ResponsiveContainer> : <SkeletonTheme baseColor="#202020" highlightColor="#444">
                     <p>
-                        <Skeleton count={20} />
+                        <Skeleton count={15} />
                     </p>
                 </SkeletonTheme>
             }
