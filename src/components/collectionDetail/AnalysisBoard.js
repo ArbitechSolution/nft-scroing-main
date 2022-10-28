@@ -541,7 +541,7 @@ function AnalysisBoard() {
                                     <div className="col-lg-6 " >
                                         <AssetsForSale />
                                     </div>
-                                    <div className="col-lg-6" >
+                                    <div className="col-lg-6  d-flex justify-content-md-end" >
                                         <FloorPrice />
                                     </div>
                                 </div>

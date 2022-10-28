@@ -85,7 +85,7 @@ dispatch(Floor_Price_Api(params, value))
                 </AreaChart>
                 </ResponsiveContainer>:<SkeletonTheme baseColor="#202020" highlightColor="#444">
         <p>
-            <Skeleton count={15} />
+            <Skeleton count={10} />
         </p>
     </SkeletonTheme>
             }
